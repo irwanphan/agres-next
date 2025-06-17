@@ -1,32 +1,28 @@
+import { Menu, MenuItem } from "./NavbarMenu";
+import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/solid";
+
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow sticky top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between py-2 px-4">
-        <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Logo" className="h-8" />
-          <span className="font-bold text-lg text-red-600">AGRESKOMPUTER</span>
-        </div>
-        <div className="flex-1 mx-4">
-          <input className="w-full border rounded px-3 py-1" placeholder="Cari produk, kategori, brand..." />
-        </div>
-        <div className="flex gap-4">
-          <button>Login</button>
-          <button>Cart</button>
-        </div>
+    <nav className="w-full py-2 px-2 mb-4 bg-gradient-to-r from-pink-600 via-cyan-700 to-cyan-400 rounded-full flex items-center overflow-x-auto">
+      <div className="flex items-center gap-2 mr-4 text-sm text-white font-semibold">
+        <Bars3Icon className="w-6 h-6 text-white" />
+        <MenuItem label="CATEGORY" iconRight={<ChevronDownIcon className="w-4 h-4 ml-1" />} />
+        <MenuItem label="BRANDS" iconRight={<ChevronDownIcon className="w-4 h-4 ml-1" />} />
       </div>
-      <div className="bg-red-600 text-white py-1 px-4">
-        <div className="container mx-auto flex gap-4 text-sm overflow-x-auto">
-          <span>KATEGORI</span>
-          <span>PC BRAND</span>
-          <span>PROCESSOR</span>
-          <span>MOTHERBOARD</span>
-          <span>VGA</span>
-          <span>STORAGE</span>
-          <span>RAM</span>
-          <span>CASING</span>
-          <span>PSU</span>
-          <span>MONITOR</span>
-          {/* ... */}
+      <Menu className="flex-1 flex gap-6 items-center text-white font-semibold text-sm overflow-x-auto">
+        <MenuItem label="PC BRAND" />
+        <MenuItem label="PROCESSOR" />
+        <MenuItem label="MOTHERBOARD" />
+        <MenuItem label="VGA" />
+        <MenuItem label="STORAGE" />
+        <MenuItem label="RAM" />
+        <MenuItem label="CASING" />
+        <MenuItem label="PSU" />
+        <MenuItem label="MONITOR" />
+      </Menu>
+      <div className="ml-auto flex items-center">
+        <div className="flex items-center max-h-10 bg-yellow-400 rounded-full px-3 py-1 ml-4">
+          <img src="/images/free-agres-protect.png" alt="Agres Protect" className="h-8 mr-2" />
         </div>
       </div>
     </nav>
