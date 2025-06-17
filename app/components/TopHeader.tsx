@@ -16,7 +16,7 @@ export default function TopHeader() {
       </div>
       {/* Center: Logo & Search */}
       <div className="flex-1 flex items-center justify-between gap-4 w-full">
-        <Image src="/site-logo.png" alt="Logo" className="h-10 w-auto" width={100} height={100} />
+        <Image src="/images/site-logo.png" alt="Logo" className="h-10 w-auto" width={100} height={100} />
         <div className="flex-1 max-w-xl mx-4">
           <div className="flex items-center border-2 border-pink-500 rounded-full overflow-hidden bg-white">
             <input

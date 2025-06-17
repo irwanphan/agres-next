@@ -21,8 +21,8 @@ export default function Navbar() {
         <MenuItem label="MONITOR" />
       </Menu>
       <div className="ml-auto flex items-center">
-        <div className="flex items-center max-h-10 bg-yellow-400 rounded-full px-3 py-1 ml-4">
-          <img src="/images/free-agres-protect.png" alt="Agres Protect" className="h-8 mr-2" />
+        <div className="flex items-center max-h-16 rounded-full px-3 py-1 ml-4">
+          <img src="/images/free-agres-protect.png" alt="Agres Protect" className="h-10" />
         </div>
       </div>
     </nav>
