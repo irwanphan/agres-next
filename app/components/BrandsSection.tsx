@@ -1,6 +1,6 @@
 export default function BrandsSection() {
   return (
-    <section className="container mx-auto py-4">
+    <section className="container mx-auto p-4 bg-white rounded-xl shadow-md">
       <h4 className="font-bold mb-2">Featured Brands</h4>
       <div className="flex gap-4 overflow-x-auto">
         {/* Ganti dengan logo brand asli */}
