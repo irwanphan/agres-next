@@ -1,10 +1,20 @@
+import Image from "next/image";
+
 export default function PromoCategories() {
   return (
-    <section className="container mx-auto py-4 flex gap-4 overflow-x-auto">
-      <div className="bg-white shadow rounded p-4 min-w-[180px] text-center">PC Rakitan Ready</div>
-      <div className="bg-white shadow rounded p-4 min-w-[180px] text-center">All PC</div>
-      <div className="bg-white shadow rounded p-4 min-w-[180px] text-center">PC Brand</div>
-      <div className="bg-white shadow rounded p-4 min-w-[180px] text-center">Processor</div>
+    <section className="container grid grid-cols-4 w-full mb-4 gap-2 overflow-x-auto">
+      <div className="bg-white shadow rounded-xl overflow-hidden text-center">
+        <Image src="/images/promo-categories/banner4-1.png" alt="PC Rakitan Ready" width={100} height={100} className="w-full" />
+      </div>
+      <div className="bg-white shadow rounded-xl overflow-hidden text-center">
+        <Image src="/images/promo-categories/banner4-2.png" alt="PC AIO" width={100} height={100} className="w-full" />
+      </div>
+      <div className="bg-white shadow rounded-xl overflow-hidden text-center">
+        <Image src="/images/promo-categories/banner4-3.png" alt="PC Brand" width={100} height={100} className="w-full" />
+      </div>
+      <div className="bg-white shadow rounded-xl overflow-hidden text-center">
+        <Image src="/images/promo-categories/banner4-4.png" alt="Processor" width={100} height={100} className="w-full" />
+      </div>
       {/* ... */}
     </section>
   );
