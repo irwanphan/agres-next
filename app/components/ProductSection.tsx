@@ -37,7 +37,7 @@ export default function ProductSection({ title, children }: ProductSectionProps)
       <div className="flex w-full justify-between relative top-36 z-10">
         <button
           aria-label="Previous"
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition shadow"
+          className="w-8 h-8 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition shadow"
           onClick={() => swiperRef.current?.slidePrev()}
           type="button"
         >
@@ -45,7 +45,7 @@ export default function ProductSection({ title, children }: ProductSectionProps)
         </button>
         <button
           aria-label="Next"
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition shadow"
+          className="w-8 h-8 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-700 transition shadow"
           onClick={() => swiperRef.current?.slideNext()}
           type="button"
         >
